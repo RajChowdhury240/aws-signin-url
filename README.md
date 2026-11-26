@@ -4,7 +4,7 @@ Print a one-click **AWS Management Console sign-in URL** from AWS credentials:
 IAM user access keys, a role, or any named profile.
 
 ```bash
-pip install aws-signin-url
+pip3 install aws-signin-url
 aws-signin-url -p dev
 # https://signin.aws.amazon.com/federation?Action=login&Destination=...&SigninToken=...
 ```
