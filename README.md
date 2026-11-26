@@ -9,6 +9,13 @@ aws-signin-url -p dev
 # https://signin.aws.amazon.com/federation?Action=login&Destination=...&SigninToken=...
 ```
 
+## Architecture
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RajChowdhury240/aws-signin-url/main/docs/architecture-dark.png">
+  <img alt="aws-signin-url architecture: access keys or named profiles feed the CLI; IAM user keys or --role-arn go through AWS STS for temporary credentials; the CLI exchanges them at AWS Sign-In for a SigninToken and prints a login URL that the browser opens to reach the AWS Management Console." src="https://raw.githubusercontent.com/RajChowdhury240/aws-signin-url/main/docs/architecture.png">
+</picture>
+
 ## How it works
 
 | Credentials you have                     | What the tool does                                  |
